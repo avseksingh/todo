@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+
+<div class="container">
+  <div class="row justify-content-center">
+          <div class="col col-lg-5">
+              <div class="container welcome-heading"> 
+                  <h3 class="welcome-txt"><b>Login</b></h3>
+              </div>
+      </div>
+  </div>   
+  
+  <div class="row justify-content-center">
+  <div class="col col-lg-5 ">
+  <div class="container todoform">
+      <form action="/login/" method = "post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <hr>
+       
+        <input type="submit" value="Login" class="btn btn-sm btn-info">
+        <a class="btn btn-sm btn-info" href="/signup">Signup</a>
+      </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+{% endblock %}
+  

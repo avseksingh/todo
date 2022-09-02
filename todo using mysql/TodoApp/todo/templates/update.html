@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="container">
+	<div class="row justify-content-center">
+			<div class="col col-lg-5">
+				<div class="container welcome-heading"> 
+					<h3 class="welcome-txt"><b>Update Task</b></h3>
+				</div>
+		</div>
+	</div>   
+	
+	<div class="row justify-content-center">
+	<div class="col col-lg-5 ">
+	<div class="container todoform">
+		<form action="" method = "post">
+		  {% csrf_token %}
+		  {{form.as_p}}
+		  <hr>
+		 
+		  <input type="submit"  class="btn btn-sm btn-info">
+
+		</form>
+	</div>
+	</div>
+	</div>
+  </div>
+
+{% endblock %}

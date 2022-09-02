@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="container">
+  <div class="row justify-content-center">
+          <div class="col col-lg-5">
+              <div class="container welcome-heading"> 
+                  <h3 class="welcome-txt"><b>signup</b></h3>
+              </div>
+      </div>
+  </div>   
+  
+  <div class="row justify-content-center">
+  <div class="col col-lg-5 ">
+  <div class="container todoform">
+    <form method="post" action="/signup/" >
+      {% csrf_token %}
+      {{ form.as_p }}
+      <hr>
+      <input class="btn btn-success" type="submit" value="Create Account">
+    </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+    
+{% endblock %}

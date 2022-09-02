@@ -1,0 +1,61 @@
+body{
+    padding: 40px;
+    padding-top: 100px;
+}
+
+.todoform
+{
+    padding: 15px;
+    box-shadow: 0 0 10px #888888;
+    background-color:#252d4a;
+    color: #ffff;
+}
+
+a{
+    color: #ffff;
+}
+
+.ops
+{
+    border-style: solid;
+    border-radius:5px;
+    display: inline;
+    margin-right: 15px;
+    padding: 4px;
+    background-color: #252d4a;
+    box-shadow: 0 0 5px #888888;
+}
+
+.table-row
+{
+    margin-top: 10px;
+    box-shadow: 0 0 10px #888888;
+    font-family: 'Raleway', sans-serif;
+}
+
+.welcome-heading
+{
+    
+    background-color: #80ffaa;
+    padding: 15px;
+    color: #252d4a;
+    box-shadow: 0 0 10px #5CDB95;
+
+}
+
+.welcome-txt
+{
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+
+.logout-heading
+{
+    padding: 7px;
+    background-color: #5CDB95;
+    text-align: right;
+    box-shadow: 0 0 15px #0000;
+    
+}
+
+
